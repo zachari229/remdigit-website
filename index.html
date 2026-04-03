@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RemDigit-Vente de produit digitaux</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <section id="acceuil-a"  class="top-page">
+        <header class="log">
+            <img src="images/logo.png" alt="Logo de RemDigit">
+            <nav class="nav">
+            
+                <li><a href="#acceuil-a">Accueil</a></li>
+                <li><a href="#">A Propos</a></li>
+                <li><a href="#nos-services">Services</a></li>
+                <li><a href="#meilleures-ventes">Commandes</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            
+        </nav>
+         </header>
+        <div class="landing-page">
+            <h1 class="p-accroche">Bienvenue chez RemDigit</h1>
+            <a class="scroll-down" href="#nos-services">
+                <i class="fas fa-angle-down"></i> Scroll
+            </a>
+        </div>
+        
+       
+    </section>
+    <section id="meilleures-ventes"  class="sevices">
+        <div class="services-item">
+            <i class="fas fa-store delivery-icon"></i>
+            <p class="service-description">Vente de produits digitaux</p>
+        </div>
+        <div class="services-item">
+            <i class="fas fa-people-carry delivery-icon"></i>
+            <p class="service-description">Service client</p>
+        </div>
+        <div class="services-item">
+            <i class="fas fa-truck  delivery-icon"></i>
+            <p class="service-description">Livraison rapide</p>
+        </div>
+        
+
+    </section>
+
+    <section class="best-sellers">
+        <h2 class="section-title">Nos meilleures ventes</h2>
+        <div class="best-products">
+            <a class="produit-box produit1 no-grid">
+                <div class="product-info">
+                    <p class="product-name">Formation Freelance</p>
+                    <p class="product-price">50 000 FCFA</p>
+                </div>
+
+            </a>
+            <a  class="produit-box produit2 no-grid">
+                <div class="product-info">
+                    <p class="product-name">Formation Infopreneur</p>
+                    <p class="product-price">50 000 FCFA</p>
+                </div>
+            </a>
+            <a  class="produit-box produit3 no-grid">
+                <div class="product-info">
+                    <p class="product-name">Formation Digital Marketing</p>
+                    <p class="product-price">50 000 FCFA</p>
+                </div>
+            </a>
+            <a  class="produit-box produit4 no-grid">
+                <div class="product-info">
+                    <p class="product-name">Formation Design</p>
+                    <p class="product-price">50 000 FCFA</p>
+                </div>
+            </a>
+        
+
+        </div>
+    </section>
+
+
+
+<section id="nos-services" class="All-services">
+    <h2 class="section-title">Nos services</h2>
+    <div class="services-grid">
+        <a class="services-grid1 services-box">
+            <div class="services-info">
+                <p class="services-name">Développement Web</p>
+                <p class="services-price">25000 FCFA</p>
+
+            </div> 
+        </a>
+        <a class="services-grid2 services-box">
+            <div class="services-info">
+                <p class="services-name">Développement Mobile</p>
+                <p class="services-price">25000 FCFA</p>
+            </div> </a>
+        <a class="services-grid3 services-box">
+            <div class="services-info">
+                <p class="services-name">Design Graphique</p>
+                <p class="services-price">25000 FCFA</p>
+            </div>
+        </a>
+        <a class="services-grid4 services-box">
+            <div class="services-info">
+                <p class="services-name">Marketing Digital</p>
+                <p class="services-price">25000 FCFA</p>
+            </div>
+
+        </a>
+        <a class="services-grid5 services-box"> 
+            <div class="services-info">
+                <p class="services-name">Rédaction de Contenu</p>
+                <p class="services-price">25000 FCFA</p>
+            </div>
+
+        </a>
+        <a class="services-grid6 services-box"> 
+            <div class="services-info">
+                <p class="services-name">Consultation en Stratégie Digitale</p>
+                <p class="services-price">25000 FCFA</p>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- ==================== FORMULAIRE DE CONTACT ==================== -->
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+        <h2 class="section-title">Contactez-nous</h2>
+        <p class="contact-subtitle">Une question ? Un projet ? Nous vous répondons rapidement.</p>
+        
+        <form id="contact-form" class="contact-form">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" name="name" required placeholder="Votre nom">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Sujet</label>
+                <input type="text" id="subject" name="subject" required placeholder="Ex: Formation Freelance, Développement Web...">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required placeholder="Décrivez votre demande..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                <i class="fas fa-paper-plane"></i> Envoyer le message
+            </button>
+        </form>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <p class="copyright">
+            &copy; 2026 RemDigit. Tous droits réservés.
+        </p>
+        
+        <a href="#" class="cgv">Conditions Générales de Vente</a>
+        
+        
+        <div class="footer-links">
+            <a href="#">Confidentialité</a>
+            <a href="#">Mentions légales</a>
+        </div>
+        
+    </div>
+</footer>        
+</body>
+</html>
