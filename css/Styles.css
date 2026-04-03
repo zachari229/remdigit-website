@@ -22,6 +22,39 @@ html {
 
 /*tete de page*/
 
+
+/* ===== RESPONSIVE HEADER & NAVIGATION ===== */
+@media (max-width: 1024px) {
+    header.log {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    nav.nav {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    nav.nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    header.log img {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav.nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
 header.log{
     display: flex;
     align-items: center;
@@ -41,6 +74,44 @@ section.top-page{
     
 }
 /*accroche*/
+
+
+/* ===== RESPONSIVE LANDING PAGE ===== */
+@media (max-width: 1024px) {
+    .p-accroche {
+        font-size: 60px;
+        margin: 150px auto 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .p-accroche {
+        font-size: 40px;
+        margin: 120px auto 20px;
+    }
+
+    .landing-page {
+        padding: 20px;
+    }
+
+    .scroll-down {
+        bottom: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .p-accroche {
+        font-size: 28px;
+        margin: 100px auto 15px;
+    }
+
+    .scroll-down {
+        font-size: 12px;
+        bottom: 50px;
+    }
+}
+
+
 
 .landing-page {
      padding: 20px 50px;
@@ -148,6 +219,35 @@ nav.nav a:hover {
 
 
 /*Services*/
+
+
+/* ===== RESPONSIVE SERVICES ===== */
+@media (max-width: 1024px) {
+    .services {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .delivery-icon {
+        font-size: 40px;
+    }
+
+    .service-description {
+        font-size: 1rem;
+        width: auto;
+    }
+}
+
+
+
 .services{
     display: flex;
     justify-content: space-evenly;
@@ -255,6 +355,45 @@ nav.nav a:hover {
     margin: 5px 0 0 0;
 }
 /*Nos Services*/
+
+
+
+
+/* ===== RESPONSIVE SERVICES GRID ===== */
+@media (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+    .services-grid1 { grid-column: span 2; grid-row: auto; }
+    .services-grid2 { grid-column: span 2; grid-row: auto; }
+    .services-grid3 { grid-column: span 2; grid-row: auto; }
+    .services-grid4 { grid-column: span 1; grid-row: auto; }
+    .services-grid5 { grid-column: span 1; grid-row: auto; }
+    .services-grid6 { grid-column: span 2; grid-row: auto; }
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .services-grid1,
+    .services-grid2,
+    .services-grid3,
+    .services-grid4,
+    .services-grid5,
+    .services-grid6 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
+
+
+
 
 
 .services-grid {
@@ -444,13 +583,31 @@ nav.nav a:hover {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-    .form-grid {
-        grid-template-columns: 1fr;
+/* ===== RESPONSIVE CONTACT ===== */
+@media (max-width: 1024px) {
+    .contact-section {
+        padding: 80px 20px;
     }
-    
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 60px 15px;
+    }
+
     .contact-form {
-        padding: 30px 20px;
+        padding: 25px 15px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.95rem;
+        padding: 12px 14px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        justify-content: center;
     }
 }
 
