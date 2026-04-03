@@ -10,7 +10,7 @@
 }
 
  body{
-    margin: 0 auto;
+    margin: 0;
     
 }
 
@@ -41,7 +41,7 @@ section.top-page{
 }
 /*accroche*/
 
-landing-page {
+.landing-page {
      padding: 20px 50px;
 }
  
@@ -110,7 +110,7 @@ landing-page {
 /*menu de navgation*/
 
 /* ====================== NAVIGATION ====================== */
-nav.nav {
+nav.nav  {
     display: flex;
     align-items: center;
     margin-left: auto;           
@@ -124,7 +124,7 @@ nav.nav ul {
     padding: 0;
 }
 
-nav.nav li {
+nav.nav li{
     list-style: none;
 }
 
