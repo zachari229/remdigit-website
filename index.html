@@ -15,19 +15,22 @@
     <section id="acceuil-a" class="top-page">
         <header class="log">
             <img src="./images/logo.png" alt="Logo de RemDigit">
-            <nav class="nav">
+
+            <!-- Bouton hamburger (mobile uniquement) -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav" id="mainNav">
                 <ul>
-                    <li><a href="#acceuil-a">Accueil</a></li>
-                    <li><a href="#">A Propos</a></li>
-                    <li><a href="#nos-services">Services</a></li>
-                    <li><a href="#meilleures-ventes">Commandes</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#acceuil-a" onclick="closeMenu()">Accueil</a></li>
+                    <li><a href="#" onclick="closeMenu()">A Propos</a></li>
+                    <li><a href="#nos-services" onclick="closeMenu()">Services</a></li>
+                    <li><a href="#meilleures-ventes" onclick="closeMenu()">Commandes</a></li>
+                    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
                 </ul>
-                
-
-
-
-
             </nav>
         </header>
         <div class="landing-page">
@@ -36,9 +39,8 @@
                 <i class="fas fa-angle-down"></i> Scroll
             </a>
         </div>
-
-
     </section>
+
     <section id="meilleures-ventes" class="services">
         <div class="services-item">
             <i class="fas fa-store delivery-icon"></i>
@@ -49,11 +51,9 @@
             <p class="service-description">Service client</p>
         </div>
         <div class="services-item">
-            <i class="fas fa-truck  delivery-icon"></i>
+            <i class="fas fa-truck delivery-icon"></i>
             <p class="service-description">Livraison rapide</p>
         </div>
-
-
     </section>
 
     <section class="best-sellers">
@@ -64,7 +64,6 @@
                     <p class="product-name">Formation Freelance</p>
                     <p class="product-price">50 000 FCFA</p>
                 </div>
-
             </a>
             <a class="produit-box produit2 no-grid">
                 <div class="product-info">
@@ -84,12 +83,8 @@
                     <p class="product-price">50 000 FCFA</p>
                 </div>
             </a>
-
-
         </div>
     </section>
-
-
 
     <section id="nos-services" class="All-services">
         <h2 class="section-title">Nos services</h2>
@@ -98,7 +93,6 @@
                 <div class="services-info">
                     <p class="services-name">Développement Web</p>
                     <p class="services-price">25000 FCFA</p>
-
                 </div>
             </a>
             <a class="services-grid2 services-box">
@@ -118,14 +112,12 @@
                     <p class="services-name">Marketing Digital</p>
                     <p class="services-price">25000 FCFA</p>
                 </div>
-
             </a>
             <a class="services-grid5 services-box">
                 <div class="services-info">
                     <p class="services-name">Rédaction de Contenu</p>
                     <p class="services-price">25000 FCFA</p>
                 </div>
-
             </a>
             <a class="services-grid6 services-box">
                 <div class="services-info">
@@ -148,7 +140,6 @@
                         <label for="name">Nom complet</label>
                         <input type="text" id="name" name="name" required placeholder="Votre nom">
                     </div>
-
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" required placeholder="votre@email.com">
@@ -174,23 +165,33 @@
         </div>
     </section>
 
-
     <footer class="footer">
         <div class="footer-container">
             <p class="copyright">
                 &copy; 2026 RemDigit. Tous droits réservés.
             </p>
-
             <a href="#" class="cgv">Conditions Générales de Vente</a>
-
-
             <div class="footer-links">
                 <a href="#">Confidentialité</a>
                 <a href="#">Mentions légales</a>
             </div>
-
         </div>
     </footer>
-</body>
 
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const mainNav = document.getElementById('mainNav');
+
+        menuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('nav-open');
+            menuToggle.classList.toggle('active');
+        });
+
+        function closeMenu() {
+            mainNav.classList.remove('nav-open');
+            menuToggle.classList.remove('active');
+        }
+    </script>
+
+</body>
 </html>
